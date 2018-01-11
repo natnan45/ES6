@@ -98,14 +98,14 @@ let show = a=>{};
 /*----------------六----------------*/
 
 #### JSON对象：
-JSON.stringify()    字符串化
-JSON.parse()
-标准写法：只能用双引号；所有的名字都必须用引号包起来
-{a: 12, b: 5}          ×
-{'a': 12, 'b': 5}      √
-{a:'abc', b: 5}        ×
-{"a": "abc", "b": 5}   √
-简写：名字与值一样的话，留一个就行；function可以删掉
+  JSON.stringify()    字符串化 
+  JSON.parse() 
+  标准写法：只能用双引号；所有的名字都必须用引号包起来 
+  {a: 12, b: 5}          × 
+  {'a': 12, 'b': 5}      √ 
+  {a:'abc', b: 5}        × 
+  {"a": "abc", "b": 5}   √ 
+  简写：名字与值一样的话，留一个就行；function可以删掉 
 ------------------------------------------------------------------
 
 
@@ -117,24 +117,21 @@ JSON.parse()
 
 - 异步：操作跟操作之间没啥关系，同时进行多个操作（代码更复杂）
 - 同步：同时只能做一件事（代码简单）
-var promise = new Promise(function(resolve, reject) {
-  if (/* 异步操作成功 */){
-    resolve(value);
-  } else {
-    reject(error);
-  }
-});
-
-promise.then(function(value) {
- // success
-}, function(value) {
- // failure
-});
-
-Promise.all([]).then(function() {},function () {})
-
----
-Promise.race      竞速（同事都去5个，哪个快哪个先来）
+var promise = new Promise(function(resolve, reject) { 
+  if (/* 异步操作成功 */){ 
+    resolve(value); 
+  } else { 
+    reject(error); 
+  } 
+}); 
+promise.then(function(value) { 
+ // success 
+}, function(value) { 
+ // failure 
+}); 
+Promise.all([]).then(function() {},function () {}) 
+--- 
+Promise.race      竞速（同事都去5个，哪个快哪个先来） 
 ------------------------------------------------------------------
 
 
@@ -142,10 +139,9 @@ Promise.race      竞速（同事都去5个，哪个快哪个先来）
 
 /*----------------八----------------*/
 
-generator - 生成器(generator函数可以走走停停，啥时候想走就走；普通函数就是一路走到底)
-generat - 生成
-
-yield - 放弃
+generator - 生成器(generator函数可以走走停停，啥时候想走就走；普通函数就是一路走到底) 
+generat - 生成 
+yield - 放弃 
 ------------------------------------------------------------------
 
 
@@ -155,10 +151,9 @@ yield - 放弃
 
 #### yield传参、返回
 
-1.yield可以传参
-最后步骤需要return
-
-2.yield返回
+1.yield可以传参 
+最后步骤需要return 
+2.yield返回 
 ------------------------------------------------------------------
 
 
