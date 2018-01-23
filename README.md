@@ -117,17 +117,23 @@ let show = a=>{};
 }, function(value) { 
  // failure 
 }); </pre>
-Promise.all([]).then(function() {},function () {}) 
-Promise.race      竞速（同时都去5个，哪个快哪个先来） 
+<pre>Promise.all([
+
+]).then(function() {
+
+},function () {
+
+});</pre> 
+<p>Promise.race      竞速（同时都去5个，哪个快哪个先来） </p>
 ------------------------------------------------------------------
 
 
 
 
 
-generator - 生成器(generator函数可以走走停停，啥时候想走就走；普通函数就是一路走到底) 
-generat - 生成 
-yield - 放弃 
+#### generator - 生成器(generator函数可以走走停停，啥时候想走就走；普通函数就是一路走到底) 
+#### generat - 生成 
+#### yield - 放弃 
 ------------------------------------------------------------------
 
 
@@ -135,14 +141,14 @@ yield - 放弃
 
 #### yield传参、返回
 
-1.yield可以传参 
-最后步骤需要return 
-2.yield返回 
+- 1.yield可以传参 
+<p>最后步骤需要return </p>
+- 2.yield返回 
 ------------------------------------------------------------------
 
 
 
 
 
-runner
-KOA基于Node.js平台下一代web开发框架
+#### runner
+<p>KOA基于Node.js平台下一代web开发框架</p>
