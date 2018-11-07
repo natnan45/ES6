@@ -1,0 +1,24 @@
+{
+  "name": "ES6",
+  "version": "1.0.0",
+  "description": "- 1.在线转换（browser.js）\r - 2.提前编译（支持）",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel build -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natnan45/ES6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natnan45/ES6/issues"
+  },
+  "homepage": "https://github.com/natnan45/ES6#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
